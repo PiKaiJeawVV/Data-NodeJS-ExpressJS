@@ -1,0 +1,1 @@
+enctype="multipart/form-data   ใส่ใน <form></form>  เพื่อตั้งให้สามารถรับไฟล์ได้
