@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello EJS Engine</h1>
+    <hr>
+    <% for(i=1;i<=3;i++) { %>
+        <p>ลำดับที่ <%= i %></p>
+    <% } %>
+    <hr>
+    <p><%= name_member %></p>
+    <% for(i=0;i<name_member.length;i++){%>
+        <p>สมาชิก <%= name_member[i] %></p>
+    <% } %>
+
+    <% for(index in name_member){%>
+        <p>สมาชิก <%= name_member[index] %></p>
+    <% } %>
+    <hr>
+    
+    <% Object.values(name_member).forEach(function(member){%>
+        <p>ชื่อ Member : <%= member.name %> : Member of : <%= member.member %></p>
+        <p></p>
+        <hr>
+    <% }) %>
+</body>
+</html>
